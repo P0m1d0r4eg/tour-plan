@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -119,7 +120,7 @@
                 <img src="img/star.svg" alt="star" />
               </div>
               <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
-              <span class="offer hotel-info__offer">Flash Offer</span>
+              <span classihotel-info__offer">Flash Offer</span>
             </div>
             <p class="hotel-description hotel-info__description">
               Half-Board/ All Inclusive + Complimentary Activities + Child Stays
@@ -134,8 +135,31 @@
           <!-- /.hotel-info__right -->
         </div>
         <!-- /.hotel-info -->
+        <div class="hotel-grid">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/slide.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/slide.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/slide.jpg" alt=""></div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button--prev"></button>
+              <button class="slider-button slider-button--next"></button>
+            </div>
+            <!-- /.swiper-container -->
+          </div>
+          <!-- /.slider -->
+        </div>
+        <!-- /.hotel-grid -->
       </div>
       <!-- /.container -->
     </section>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
