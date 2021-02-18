@@ -592,13 +592,13 @@ template {
 .hotel-slider {
   width: 728px;
   height: 450px;
+  margin-left: 0;
 }
 
 .hotel-slider__item {
   width: 100%;
-  height: 450px;
   position: relative;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .hotel-slider__item::after {
@@ -613,6 +613,7 @@ template {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   z-index: 10;
+  border-radius: 10px;
 }
 
 .hotel-slider__button {
@@ -823,9 +824,9 @@ template {
 .map {
   width: 347px;
   height: 213px;
-  background-radius: 4px;
   background-color: #000;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .reviews {
@@ -1063,6 +1064,7 @@ template {
   }
   .hotel-slider {
     width: 590px;
+    border-radius: 10px;
   }
   .hotel-slider__image {
     height: 100%;
@@ -1079,11 +1081,11 @@ template {
   .logo {
     width: 132px;
   }
-  -top {
+  .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  __search {
+  .navbar__search {
     margin: auto;
   }
   .navbar-menu {
@@ -1199,6 +1201,10 @@ template {
             order: -1;
     margin-left: 0;
   }
+  .hotel-slider__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .hotel-right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1257,7 +1263,7 @@ template {
   .swiper-container {
     height: 260px;
   }
-  .swiper-container .newsletter {
+  .newsletter {
     padding: 76px 0 83px 0;
   }
   .subscribe {
